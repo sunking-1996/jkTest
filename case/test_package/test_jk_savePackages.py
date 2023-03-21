@@ -25,8 +25,8 @@ class savePackages():
         assert result_rcode == 0
         assert result_scode == 0
 
-# if __name__ == '__main__':
-#     s = requests.session()
-#     a = Login(s)  # 实例化
-#     a.test_login()    # 登陆
+if __name__ == '__main__':
+    s = requests.session()
+    a = Login(s)  # 实例化
+    a.test_login()    # 登陆
 

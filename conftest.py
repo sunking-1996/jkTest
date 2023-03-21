@@ -5,7 +5,6 @@ import urllib3
 import pytest
 import re
 urllib3.disable_warnings()  # 忽略警告
-@pytest.fixture()
 class Login():
     def __init__(self, s):
         self.s = s

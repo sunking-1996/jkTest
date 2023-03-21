@@ -3,7 +3,7 @@ import requests
 from common.read_yml import readyml
 import os
 BASE_PATH = os.path.dirname(os.path.dirname(os.path.realpath(__file__)))
-a = os.path.join(os.path.dirname(os.path.realpath(__file__)), "test_data.yml")
+a = os.path.join(os.path.dirname(os.path.realpath(__file__)), "../../data/test_data.yml")
 print(a)
 test_data = readyml(a)
 print(test_data['test_data'])
