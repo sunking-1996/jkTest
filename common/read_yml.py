@@ -8,8 +8,7 @@ def readyml(yamlPath):
         raise FileNotFoundError("文件路径不存在，请检查路径是否正确：%s" % yamlPath)
     # open方法打开直接读出来
     f = open(yamlPath, 'r', encoding='utf-8')
-    cfg = f.read()
-    d = yaml.load(cfg)
+    d = yaml.load(f,Loader=yaml.FullLoader)
     # 用load方法转字典
     print("读取的测试文件数据：%s"%d)
     return d
