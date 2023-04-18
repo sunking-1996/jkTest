@@ -28,4 +28,3 @@ if __name__ == '__main__':
     s = requests.session()
     a = Login(s)  # 实例化
     a.test_login()    # 登陆
-

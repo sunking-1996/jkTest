@@ -13,3 +13,23 @@ login:
   - ['', '', 1, 100]
   #账号密码None
   - [None, None, 1, 104]
+
+queryPackages:
+  #分类,是都倒序,当前页,每页显示,交易状态
+  #sort,desc,page,pageSize,status,rcode,scode
+  #待打订单每页显示10笔
+  - [createTime, true, 1, 10, 0, 0, 0]
+  #待打订单每页显示20笔
+  - [createTime, true, 1, 20, 0, 0, 0]
+  #待打订单每页显示50笔
+  - [createTime, true, 1, 50, 0, 0, 0]
+  #待打订单每页显示100笔
+  - [createTime, true, 1, 100, 0, 0, 0]
+  #已打订单每页显示10笔
+  - [printTime, true, 1, 10, 4, 0, 0]
+  #已打订单每页显示20笔
+  - [printTime, true, 1, 20, 4, 0, 0]
+  #已打订单每页显示50笔
+  - [printTime, true, 1, 50, 4, 0, 0]
+  #已打订单每页显示100笔
+  - [printTime, true, 1, 100, 4, 0, 0]

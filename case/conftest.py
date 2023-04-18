@@ -1,6 +1,6 @@
 import pytest
 import requests
-from common.func_login import login
+from case.func_login import login
 
 @pytest.fixture(scope="module")
 def login_fix():
